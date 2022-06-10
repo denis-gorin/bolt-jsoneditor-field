@@ -1,0 +1,29 @@
+{
+  "name": "denis-gorin/bolt-jsoneditor-field",
+  "description": "bolt-jsoneditor-field",
+  "type": "bolt-extension",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "DG",
+          "email": "denis.gorin@gmail.com"
+      }
+  ],
+  "require": {
+      "php": ">=7.1.3"
+  },
+  "require-dev": {
+      "bolt/core": "^4.0 || ^5.0",
+      "symplify/easy-coding-standard": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bolt\\Jsoneditor\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "entrypoint": "Bolt\\Jsoneditor\\Extension"
+  }
+}

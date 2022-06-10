@@ -1,0 +1,21 @@
+{% extends '@bolt/_partials/fields/_base.html.twig' %}
+
+
+{% block field %}
+
+
+
+    <div id="initialValue" class="json-field">
+        <textarea type="text" class="form-control" name="{{ name }}" id="{{ id }}">{{ value }}</textarea>
+    </div>
+
+    <div id="jsoneditor" style="width: 100%; height: 640px;"></div>
+
+    {# <p>
+        It even has some configuration. See the JSON here, or check the output in the Debug toolbar.
+        <small>(it's added in <code>injector.html.twig</code>!)</small>
+    </p> #}
+
+    {# <code>{{ json_editor_value() }}</code> #}
+
+{% endblock %}
